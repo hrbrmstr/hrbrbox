@@ -1,0 +1,42 @@
+{
+	"name": "hrbrbox",
+	"description": "general purpose utility functions for observable notebooks",
+	"version": "0.1.4",
+	"main": "src/index.js",
+	"module": "src/index.js",
+	"type": "module",
+	"jsdelivr": "dist/index.min.js",
+	"unpkg": "dist/index.min.js",
+	"exports": {
+		"umd": "./dist/index.min.js",
+		"default": "./src/index.js"
+	},
+	"files": [
+		"src",
+		"dist"
+	],
+  "author": "boB Rudis",
+  "license": "MIT",
+	  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrbrmstr/hrbrbox.git"
+  },
+	  "keywords": [
+    "observable"
+  ],
+	  "bugs": {
+    "url": "https://github.com/hrbrmstr/hrbrbox/issues"
+  },
+  "homepage": "https://github.com/hrbrmstr/hrbrbox#readme",
+	"scripts": {
+		"build": "rollup -c",
+		"prepare": "npm run build"
+	},
+	"devDependencies": {
+		"@rollup/plugin-babel": "^6.0.3",
+		"@rollup/plugin-commonjs": "^24.0.1",
+		"@rollup/plugin-json": "^6.0.0",
+		"@rollup/plugin-node-resolve": "^15.0.1",
+		"@rollup/plugin-terser": "^0.4.0"
+	}
+}
